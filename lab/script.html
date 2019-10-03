@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Script Form</title>
+<script>
+	function validation()
+	{
+		var Name=document.forms["Regform"]["name"];
+		var Email=document.forms["Regform"]["emailadd"];
+		var Phno=document.forms["Regform"]["ph-no"];
+		var Username=document.forms["Regform"]["username"];
+		var Age=document.forms["Regform"]["age"];
+		var Gender=document.forms["Regform"]["gender"];
+		var Payment=document.forms["Regform"]["payment"];
+
+		if(Name.value=="")
+		{
+			window.alert("*Please fill in the Name field*");
+			Name.focus();
+			return false;
+		}
+		if(Email.value=="")
+		{
+			window.alert("*Please fill in the Email field*");
+			Email.focus();
+			return false;
+		}	
+		if(Phno.value=="")
+		{
+			window.alert("*Please fill in the Phone number field*");
+			 Phno.focus();
+			return false;
+		}	
+		if(Username.value=="")
+		{
+			window.alert("*Please fill in the Username field*");
+			Username.focus();
+			return false;
+		}	
+		if(Age.value=="")
+		{
+			window.alert("*Please fill in the Age field*");
+			Age.focus();
+			return false;
+		}	
+		if(Gender.value=="")
+		{
+			window.alert("*Please fill in the Gender field*");
+			Gender.focus();
+			return false;
+		}	
+		if(Payment.value=="")
+		{
+			window.alert("*Please fill in the Payment field*");
+			Payment.focus();
+			return false;
+		}	
+	
+
+	}
+
+</script>
+</head>
+<body style="background-color:#f5dbd0;">
+<form name="Regform" submit=""submit" onsubmit="return validation()" method="post"><center>
+<h1 style="text-align:center;">Fill in the Form</h1>
+<p>Name<input type="text" name="name"><br>
+<p>Age<select name="age">
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+</select>
+<br>
+<p>Gender<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female<br>
+<p>Address<textarea rows="4" cols="50" name="address" placeholder="Enter text here.."></textarea><br>
+<p>Payment Options<select name="payment">
+<option value="netbanking">Net Banking</option>
+<option value="creditcard">Credit Card</option>
+<option value="debitcard">Debit Card</option>
+<option value="paypal">PayPal</option>
+<option value="upi">upi</option>
+</select><br>
+<p>Phone Number<input type="text" name="ph-no"><br>
+<p>Email Address<input type="text name"emailadd"><br>
+<p>Preferred Username<input type="text" name="username"><br>
+<p>Area of Interest<textarea rows="4" cols="50" name="areasofinterest" placeholder="Enter text here.."></textarea><br>
+<p><button type="submit" onClick="validation()" value="submit" style="background-color:#e87b4d; border:2px solid black; color:#f5dbd0; border-radius:50%; padding:10px; height:50px;width:300px">Submit</button><br><br>
+<button type="reset" value="reset" style="background-color:#e87b4d; border:2px solid black; color:#f5dbd0; border-radius:50%; padding:10px; height:50px;width:300px">Reset</button>
+</center></form>
+</body>
+</html>

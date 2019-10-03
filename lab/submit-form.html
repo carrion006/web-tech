@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Window Alert</title>
+<style>
+h1{text-align:center;}
+body{background-color:#f5dbd0;}
+p{font-size:22;}
+</style>
+</head>
+
+<body>
+<h1>Submit Form</h1>
+<p>Name:<input type="text">
+<p>Email Address:<input type="text">
+<p>Programming Skills:<input type="range" name="skills" min="1" max="100">
+<p><input id="color" type="color" value="#5000">
+<p><button name="submit" onClick="val()" value="submit" >SUBMIT</button>
+</p> 
+
+<script>
+function val()
+{
+window.alert("*Form Submited*");
+return true;
+}
+</script>
+</body>
+</html>

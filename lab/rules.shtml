@@ -1,0 +1,19 @@
+<html>
+<head><title>Hindustan University</title></head>
+<body style="background-color:#f5dbd0" ><center>
+<h1><p>Rules & Regulation</p></h1>
+<button onclick="act()" style="background-color:#e87b4d; border:2px solid black; color:#f5dbd0; border-radius:50%; padding:10px; height:50px;width:100px">Details</button>
+<p id="timeanddate"></p>
+<p id="demo"></center></p>
+<script>
+function act()
+{
+	var str="Rules & Regulation";
+	var result=str.link("Z:/Web-Tech/rules-html.html");
+	var x=document.lastModified;
+	document.getElementById("demo").innerHTML=result;
+	document.getElementById("timeanddate").innerHTML="lastmodified"+x;
+}
+</script>
+</body>
+</html>
